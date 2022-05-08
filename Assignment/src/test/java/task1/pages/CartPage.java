@@ -1,4 +1,4 @@
-package pages;
+package task1.pages;
 
 import static org.junit.Assert.assertTrue;
 

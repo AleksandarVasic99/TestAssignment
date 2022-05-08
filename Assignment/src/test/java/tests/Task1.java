@@ -1,6 +1,5 @@
 package tests;
 
-import java.io.File;
 import java.time.Duration;
 import java.util.Scanner;
 
@@ -11,19 +10,18 @@ import org.junit.jupiter.api.TestMethodOrder;
 import org.junit.runners.Parameterized.Parameters;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
-import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.edge.EdgeDriver;
-import org.openqa.selenium.opera.OperaDriver;
+
+import task1.pages.BasePage;
+import task1.pages.CartPage;
+import task1.pages.CheckoutPage;
+import task1.pages.LoginPage;
+import task1.pages.NavBarPage;
+import task1.pages.ProductsPage;
+
 import org.junit.jupiter.api.AfterAll;
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.Order;
-
-import pages.BasePage;
-import pages.CartPage;
-import pages.CheckoutPage;
-import pages.LoginPage;
-import pages.NavBarPage;
-import pages.ProductsPage;
 
 @TestInstance(TestInstance.Lifecycle.PER_CLASS)
 @TestMethodOrder(MethodOrderer.OrderAnnotation.class)
@@ -61,12 +59,12 @@ public class Task1 {
 				System.setProperty("webdriver.edge.driver", "msedgedriver.exe");
 				driver = new EdgeDriver();
 			}
-			    else if (browser.equalsIgnoreCase("opera")) {
-			    	System.setProperty("webdriver.opera.driver", "operadriver.exe");
-			    	 ChromeOptions options = new ChromeOptions();
-			    	 options.setBinary(new File("C:\\Users\\vasic\\AppData\\Local\\Programs\\Opera"));
-			    	 driver = new OperaDriver(;)
-			}
+//			    else if (browser.equalsIgnoreCase("opera")) {
+//			    	System.setProperty("webdriver.opera.driver", "operadriver.exe");
+//			    	 ChromeOptions options = new ChromeOptions();
+//			    	 options.setBinary(new File("C:\\Users\\vasic\\AppData\\Local\\Programs\\Opera"));
+//			    	 driver = new OperaDriver(;)
+//			}
 
 		}
 
