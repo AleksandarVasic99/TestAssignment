@@ -1,0 +1,6 @@
+The Test1 was done with Selenium using JUnit
+When you run the test as JUnit,In console there will be text saying "Input name of the browser:".You can type in chrome or edge.
+The Task2 was done in selenium using JUnit and RestAssured.
+Due to lack of knowledge and experience when it comes to JUnit and RestAssured i wasnt able to fully automate the test.
+To run the test,token needs to be inputed manualy,and after that the second part of the test will need the url to be changed,becouse i didnt find a way to get the id of the user that the first part creates.This also goes for the 3 part of the test.
+I spend a nice amount of time tryng to automate it as much as i cant but the get method didnt pull the user that i created.
